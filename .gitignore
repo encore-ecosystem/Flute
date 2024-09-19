@@ -1,0 +1,10 @@
+.idea
+
+clusters/api/.idea
+clusters/api/.venv
+
+web/.idea
+web/target
+web/dist
+
+.env

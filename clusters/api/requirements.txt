@@ -1,0 +1,10 @@
+starlette~=0.37.2
+fastapi~=0.112.0
+pydantic~=2.8.2
+passlib~=1.7.4
+python-dotenv~=1.0.1
+envparse~=0.2.0
+motor~=3.5.1
+uvicorn~=0.30.5
+python-jose~=3.3.0
+python-multipart~=0.0.9

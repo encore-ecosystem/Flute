@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flute</title>
+    <link id="favicon"  href="{{ url_for('static', path='/icons/flute.svg') }}" rel="icon" type="image/x-icon">
+    <!--Normalize and link stylesheet-->
+    <link href="{{ url_for('static', path='/css/normalize.css') }}" rel="stylesheet" />
+    <link  href="{{ url_for('static', path='/css/auth.css') }}" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <span class="logo">The Flute</span>
+        <span class="header-buttons">
+            <button class="header-button" type="button">
+                <img
+                        src="{{ url_for('static', path='/icons/dark_mode.svg') }}"
+                        alt="Dark mode button"
+                />
+            </button>
+            <button class="header-button" type="button">
+                <img
+                        src="{{ url_for('static', path='/icons/settings.svg') }}"
+                        alt="Settings button"
+                />
+            </button>
+        </span>
+    </header>
+    <hr />
+    <main>
+        <p class="welcome-message">Welcome to Flute!</p>
+        <form method="post" enctype="multipart/form-data">
+            <fieldset class="form">
+                <legend>login/email/phone</legend>
+                <label>
+                    <input type="text" name="username"/>
+                </label>
+            </fieldset>
+
+            <fieldset class="form">
+                <legend>password</legend>
+                <label>
+                    <input type="password" name="password"/>
+                </label>
+            </fieldset>
+
+            <button type="submit" class="action-button" value="Submit">
+                Sign In
+            </button>
+        </form>
+
+        <span>Don't have an account? <a class="extra-button" href="http://localhost:8080/register">Sign Up</a></span>
+    </main>
+</body>
+</html>

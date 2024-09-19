@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url("../fonts/Comfortaa.woff2") format('woff2');
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 80px;
+    margin-right: 5px;
+}
+
+
+.header-button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
+    transition-duration: 200ms;
+}
+.header-button img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.header-button:hover {
+    background-color: #f6f6f6;
+    transition-duration: 200ms;
+}
+
+hr {
+    margin-block: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome-message {
+    margin-inline: auto;
+    margin-top: 5%;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.form {
+    border-radius: 30px;
+    border: 2px solid black;
+    position: relative;
+    height: 80px;
+    width: 500px;
+    margin-inline: auto;
+    margin-block: 20px;
+    padding-inline: 30px;
+    padding-block: 5px;
+}
+.form legend {
+    position: absolute;
+    top: -15px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.form input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.action-button {
+    width: 220px;
+    height: 70px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    display: block;
+    border-radius: 35px;
+    margin-inline: auto;
+    transition-duration: 200ms;
+    background: linear-gradient(90deg, #ff5f6d, #ffc371);
+}
+
+.action-button:hover {
+    opacity: 75%;
+    transition-duration: 200ms;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 80% 1%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 1%;
+    }
+}
+
+.extra-button {
+    color: blue;
+    text-decoration: none;
+}
+
+main span {
+    margin-inline: auto;
+    margin-block: 10px;
+}
